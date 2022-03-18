@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #1B191A;
+    margin-top: 100px;
+}
+
+.section{
+    padding: 100px 0 100px 0;
+}
+
+.container{
+    max-width: 1480px;
+    padding: 0 20px 0 20px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.card__image{
+    position: relative;
+}
+
+.card__image-pic{
+    vertical-align: top;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    height: 240px;
+}
+
+.card__name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 8px 0 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.card__reward{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__reward-item{
+    width: 32px;
+    height: 32px;
+}
+
+.card__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 240px;
+    padding: 16px;
+    background: #fff;
+}
+
+.card__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.card__btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #8c32ff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: auto;
+}
+
